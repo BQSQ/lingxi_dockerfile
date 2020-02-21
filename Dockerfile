@@ -5,7 +5,7 @@
 # pytorch       1.3.1  (pip)
 # ==================================================================
 
-FROM kilox/lingxi:dockerbase
+FROM kilox18/lingxi:dockerbase
 
 # ==================================================================
 # Install dependences of OpenCV
