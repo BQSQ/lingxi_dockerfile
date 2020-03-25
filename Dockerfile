@@ -18,6 +18,23 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # ==================================================================
+# pytorch
+# ------------------------------------------------------------------
+
+    $PIP_INSTALL \
+        future \
+        numpy \
+        protobuf \
+        enum34 \
+        pyyaml \
+        typing \
+        && \
+    $PIP_INSTALL \
+        pillow==6.2.1 torch==1.3.1 torchvision==0.4.2 -f \
+        https://download.pytorch.org/whl/cu100/torch_stable.html \
+        && \
+
+# ==================================================================
 # Install useful tools
 # ------------------------------------------------------------------
 RUN python -m pip --no-cache-dir install --upgrade \
