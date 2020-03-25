@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 # pytorch
 # ------------------------------------------------------------------
 
-    $PIP_INSTALL \
+    python -m pip --no-cache-dir install --upgrade \
         future \
         numpy \
         protobuf \
