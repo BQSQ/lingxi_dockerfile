@@ -29,8 +29,8 @@ RUN python -m pip --no-cache-dir install --upgrade \
         pyyaml \
         typing \
         pillow==6.2.1 torch==1.3.1 torchvision==0.4.2 -f \
-        https://download.pytorch.org/whl/cu100/torch_stable.html \
-        && \
+        https://download.pytorch.org/whl/cu100/torch_stable.html
+        
 
 # ==================================================================
 # Install useful tools
